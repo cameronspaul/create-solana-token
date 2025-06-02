@@ -29,7 +29,7 @@ const tx = await buildCreateTokenTransaction({
     isMutable: true,
     name: "Extreme 4D Coin Setup",
     symbol: "4DGAMING",
-    uri: "https://ipfs.io/ipfs/QmUAmFqqHJoMG6s5RoveuVg5Bv3d4T73Ycp2fyUxTSoSuB",
+    uri: "https://raw.githubusercontent.com/cameronspaul/create-solana-token/refs/heads/main/metadata.json",
   },
   mint,
   latestBlockhash,
