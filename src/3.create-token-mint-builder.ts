@@ -27,8 +27,8 @@ const tx = await buildCreateTokenTransaction({
   decimals: 9,
   metadata: {
     isMutable: true,
-    name: "Extreme 4D Coin Setup",
-    symbol: "4DGAMING",
+    name: "FartCoin69",
+    symbol: "FC69",
     uri: "https://raw.githubusercontent.com/cameronspaul/create-solana-token/refs/heads/main/metadata-data.json",
   },
   mint,
