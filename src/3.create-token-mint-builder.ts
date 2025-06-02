@@ -6,7 +6,7 @@ import {
   signTransactionMessageWithSigners,
 } from "gill";
 import { loadKeypairSignerFromFile } from "gill/node";
-import { buildCreateTokenTransaction, TOKEN_2022_PROGRAM_ADDRESS } from "gill/programs/token";
+import { buildCreateTokenTransaction, TOKEN_PROGRAM_ADDRESS } from "gill/programs/token";
 
 const { rpc, sendAndConfirmTransaction } = createSolanaClient({
   urlOrMoniker: "devnet",
@@ -17,7 +17,7 @@ console.log("signer:", signer.address);
 
 const { value: latestBlockhash } = await rpc.getLatestBlockhash().send();
 
-const tokenProgram = TOKEN_2022_PROGRAM_ADDRESS;
+const tokenProgram = TOKEN_PROGRAM_ADDRESS;
 const mint = await generateKeyPairSigner();
 console.log("mint:", mint.address);
 
