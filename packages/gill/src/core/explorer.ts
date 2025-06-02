@@ -4,13 +4,13 @@ import type { GetExplorerLinkArgs } from "../types";
  * Craft a Solana Explorer link on any cluster
  */
 export function getExplorerLink(props: GetExplorerLinkArgs = {}): string {
-  let url = new URL("https://solscan.io/");
+  let url = new URL("https://explorer.solana.com");
 
   // default to mainnet / mainnet-beta
   if (!props.cluster || props.cluster == "mainnet") props.cluster = "mainnet-beta";
 
   if ("address" in props) {
-    url.pathname = `/account/${props.address}`;
+    url.pathname = `/address/${props.address}`;
   } else if ("transaction" in props) {
     url.pathname = `/tx/${props.transaction}`;
   } else if ("block" in props) {
