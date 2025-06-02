@@ -12,7 +12,7 @@ const { rpc, sendAndConfirmTransaction } = createSolanaClient({
   urlOrMoniker: "devnet",
 });
 
-const signer = await loadKeypairSignerFromFile();
+const signer = await loadKeypairSignerFromFile("bosYRnpXtejtDXF79Pj4MnTPfHaZiJEFGSs1PsbkXne.json");
 console.log("signer:", signer.address);
 
 const { value: latestBlockhash } = await rpc.getLatestBlockhash().send();

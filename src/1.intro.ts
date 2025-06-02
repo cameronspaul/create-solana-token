@@ -14,7 +14,7 @@ import { getAddMemoInstruction } from "gill/programs";
  *
  * This defaults to the file path used by the Solana CLI: `~/.config/solana/id.json`
  */
-const signer = await loadKeypairSignerFromFile();
+const signer = await loadKeypairSignerFromFile("bosYRnpXtejtDXF79Pj4MnTPfHaZiJEFGSs1PsbkXne.json");
 console.log("address:", signer.address);
 
 /**
