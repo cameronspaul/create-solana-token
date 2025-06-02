@@ -48,7 +48,7 @@ npx esrun src/<script-name>.ts
 
 For example:
 ```bash
-npx esrun src/1.intro.ts
+npx esrun src/3.create-token-mint-builder.ts
 ```
 
 ## Common Issues & Solutions

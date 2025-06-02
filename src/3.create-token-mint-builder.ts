@@ -27,14 +27,14 @@ const tx = await buildCreateTokenTransaction({
   decimals: 9,
   metadata: {
     isMutable: true,
-    name: "super sweet token",
-    symbol: "SST",
-    uri: "https://raw.githubusercontent.com/solana-developers/opos-asset/main/assets/Climate/metadata.json",
+    name: "Extreme 4D Coin Setup",
+    symbol: "4DGAMING",
+    uri: "https://ipfs.io/ipfs/QmUAmFqqHJoMG6s5RoveuVg5Bv3d4T73Ycp2fyUxTSoSuB",
   },
   mint,
   latestBlockhash,
   // defaults to `TOKEN_PROGRAM_ADDRESS`
-  tokenProgram,
+
 });
 
 const signedTransaction = await signTransactionMessageWithSigners(tx);
